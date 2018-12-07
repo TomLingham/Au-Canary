@@ -5,6 +5,10 @@ again... hopefully.
 
 ## Installation
 
+You can copy paste this convoluted and definitely secure code into your shell of
+choice.  This _will_ change the directory where git reads your global hooks, or,
+just add `./prepare-commit-msg` to your global git hooks folder.
+
 ```
 mkdir -p ~/.git_global/hooks
 git config --global core.hooksPath ~/.git_global/hooks
@@ -18,6 +22,10 @@ The AU Canary pre-commit hook automatically prepends a canary to each of the
 commits that you make notifying the projects maintainers that you have not been
 compelled by the Australian Government or an Australian Government agency to add
 some form of backdoor in your contribution.
+
+Then, if you have been compelled by the Australian Government to include a back
+door or some other flaw into a system, all you have to do is remove this from
+your commit messages.
 
 It adds it after the first line so that it doesn't show up in short commits, but
 can easily be checked by CI or by looking at the full commit message.
