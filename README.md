@@ -1,4 +1,4 @@
-# AU Canary
+# AU Canary - Trust me, I'm Australian.
 
 An automatic pre-commit hook, so developers from Australia can be trusted
 again... hopefully.
