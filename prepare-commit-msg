@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+CANARY_TOKEN="AUSPACT20181207"
+
+read -r -d '' CANARY << EE
+[S:$CANARY_TOKEN]
+I declare that I have not been compelled by the Australian Government or an
+Australian Government Agency to make this contribution.
+[E:$CANARY_TOKEN]
+EE
+
+# Only add canary if it's not already there
+if ! grep -q "$CANARY_TOKEN" $1; then
+  echo "\n$CANARY" >> $1
+fi
