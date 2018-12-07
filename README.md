@@ -36,14 +36,15 @@ Date:   Fri Dec 7 20:35:02 2018 +1100
 
     My totally legit, uncompromised commit message.
 
-    [AUSPACT20181207]
+    [S:AUSPACT20181207]
     I declare that I have NOT been compelled by the Australian Government or an
     Australian Government Agency to make this contribution.
+    [E:AUSPACT20181207]
 ```
 
 ## FAQ
 
-### What is the `[AUSPACT20181207]` bit for?
+### What is the `[S|E:AUSPACT20181207]` bit for?
 
 This is just an easy string to be be able to scan for in CI. And it's labelled
 with the date because no doubt this wont be the only one of these bastards that
